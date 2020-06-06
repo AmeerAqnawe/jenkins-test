@@ -11,4 +11,10 @@ class NestedLoopTest {
         NestedLoop loop = new NestedLoop();
         assertEquals(56, loop.nestedForLoops());
     }
+
+    @Test
+    void nestedWhileForLoops() {
+        NestedLoop loop = new NestedLoop();
+        assertEquals(56, loop.nestedWhileForLoops());
+    }
 }
