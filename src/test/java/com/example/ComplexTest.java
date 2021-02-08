@@ -2,6 +2,7 @@ package com.example;
 
 import org.junit.jupiter.api.Test;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 /**
@@ -17,5 +18,14 @@ public class ComplexTest
     {
         Complex calc = new Complex(1.0, 4.0);
         assertNotNull(calc);
+    }
+
+    @Test
+    void testAdd() {
+        Complex calc1 = new Complex(1.0, 4.0);
+        Complex calc2 = new Complex(1.0, 4.0);
+        Complex calc3 = calc1.add(calc2);
+        assertEquals(2, calc3.real);
+        assertEquals(8, calc3.imag);
     }
 }
