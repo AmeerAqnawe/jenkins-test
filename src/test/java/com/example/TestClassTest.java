@@ -11,4 +11,10 @@ class TestClassTest {
         TestClass testClass = new TestClass();
         assertEquals(3, testClass.countCharacters());
     }
+
+    @Test
+    void removeSpaces() {
+        TestClass test = new TestClass();
+        assertEquals("HelloWorld!", test.removeSpaces("Hello World!"));
+    }
 }
