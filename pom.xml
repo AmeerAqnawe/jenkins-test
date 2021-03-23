@@ -28,6 +28,11 @@
           <artifactId>guava</artifactId>
           <version>29.0-jre</version>
       </dependency>
+      <dependency>
+          <groupId>io.moco</groupId>
+          <artifactId>m0c0-maven-plugin</artifactId>
+          <version>1.0-SNAPSHOT</version>
+      </dependency>
   </dependencies>
 
   <build>
@@ -94,6 +99,16 @@
                       </goals>
                   </execution>
               </executions>
+          </plugin>
+          <plugin>
+              <groupId>io.moco</groupId>
+              <artifactId>m0c0-maven-plugin</artifactId>
+              <version>1.0-SNAPSHOT</version>
+              <configuration>
+                  <gitMode>false</gitMode>
+                  <debugEnabled>true</debugEnabled>
+                  <preprocessTestTimeout>500</preprocessTestTimeout>
+              </configuration>
           </plugin>
       </plugins>
   </build>
