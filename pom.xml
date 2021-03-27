@@ -133,11 +133,13 @@
                 <groupId>io.moco</groupId>
                 <artifactId>m0c0-maven-plugin</artifactId>
                 <version>1.0-SNAPSHOT</version>
-                <configuration>
-                    <gitMode>false</gitMode>
-                    <debugEnabled>true</debugEnabled>
-                    <preprocessTestTimeout>500</preprocessTestTimeout>
-                </configuration>
+                <executions>
+                     <execution>
+                           <goals>
+                                 <goal>moco</goal>
+                           </goals>       
+                     </execution>
+                 </executions>
             </plugin>
         </plugins>
     </build>
