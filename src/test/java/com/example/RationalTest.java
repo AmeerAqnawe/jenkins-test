@@ -29,4 +29,11 @@ class RationalTest {
         Rational rat = Rational.of(numerator, denominator);
         assertEquals("1", rat.toString());
     }
+
+    @Test
+    void testTimes() {
+        Rational rat1 = Rational.ofLong(2L);
+        Rational rat2 = Rational.ofLong(2L);
+        assertEquals(Rational.ofLong(4L), rat1.times(rat2));
+    }
 }
