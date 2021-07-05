@@ -21,4 +21,12 @@ class RationalTest {
         BigInteger denominator = BigInteger.ZERO;
         assertThrows(IllegalArgumentException.class, () -> Rational.of(numerator, denominator));
     }
+
+    @Test
+    void testToString() {
+        BigInteger numerator = BigInteger.ONE;
+        BigInteger denominator = BigInteger.ONE;
+        Rational rat = Rational.of(numerator, denominator);
+        assertEquals("1", rat.toString());
+    }
 }
