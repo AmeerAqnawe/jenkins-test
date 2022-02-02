@@ -96,8 +96,7 @@ public class Complex {
    * @return false if <code>this.real == 0.0</code>, true otherwise
    */
   public boolean isPure() {
-    if (real != 0.0) return false;
-    return true;
+    return real == 0.0;
   }
 
   /**
