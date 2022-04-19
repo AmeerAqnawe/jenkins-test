@@ -28,4 +28,12 @@ public class ComplexTest
         assertEquals(2, calc3.real);
         assertEquals(8, calc3.imag);
     }
+
+    @Test
+    void testNegate() {
+        Complex calc1 = new Complex(1.0, 4.0);
+        Complex calc2 = calc1.negate();
+        assertEquals(-1.0, calc2.real);
+        assertEquals(-4.0, calc2.imag);
+    }
 }
