@@ -84,6 +84,7 @@ public class Rational extends Number implements Comparable<Rational> {
 
   /** Create a new rational from two longs. */
   public static Rational ofLongs(long numerator, long denominator) {
+
     return of(BigInteger.valueOf(numerator), BigInteger.valueOf(denominator));
   }
 
