@@ -217,18 +217,18 @@ public class Complex {
    * @param doubleLength The number of decimal places to return
    */
   public String toString(int doubleLength) {
-    StringBuffer temp = new StringBuffer();
-    temp.append(trim(real, doubleLength));
+    StringBuffer tempVar = new StringBuffer();
+    tempVar.append(trim(real, doubleLength));
     if (imag < 0.0) {
-      temp.append(" - ");
-      temp.append(trim(-imag, doubleLength));
-      temp.append(" i");
+      tempVar.append(" - ");
+      tempVar.append(trim(-imag, doubleLength));
+      tempVar.append(" i");
     } else {
-      temp.append(" + ");
-      temp.append(trim(imag, doubleLength));
-      temp.append(" i");
+      tempVar.append(" + ");
+      tempVar.append(trim(imag, doubleLength));
+      tempVar.append(" i");
     }
-    return temp.toString();
+    return tempVar.toString();
   }
 
   /**
