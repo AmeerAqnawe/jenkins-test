@@ -36,4 +36,10 @@ class RationalTest {
         Rational rat2 = Rational.ofLong(2L);
         assertEquals(Rational.ofLong(4L), rat1.times(rat2));
     }
+
+    @Test
+    void testToCoverGetNum() {
+        Rational rat1 = Rational.ofLong(2L);
+        assertEquals(rat1.getNum().doubleValue(), 2.0);
+    }
 }
