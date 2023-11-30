@@ -17,4 +17,10 @@ class TestClassTest {
         TestClass test = new TestClass();
         assertEquals("HelloWorld!", test.removeSpaces("Hello World!"));
     }
+
+    @Test
+    void coverLine21() {
+        TestClass test = new TestClass();
+        test.countFoos(1);
+    }
 }
