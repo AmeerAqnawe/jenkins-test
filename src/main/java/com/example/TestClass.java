@@ -23,6 +23,7 @@ public class TestClass {
       if (input % 3 == 0) {
         numFoos += 1;
       }
+      input--;
     }
     arbitraryInt -= 15;
     numFoos = numFoos + arbitraryInt;
