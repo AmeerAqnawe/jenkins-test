@@ -21,6 +21,6 @@ class TestClassTest {
     @Test
     void coverLine21() {
         TestClass test = new TestClass();
-        test.countFoos(3);
+        test.countFoos(6);
     }
 }
