@@ -31,5 +31,10 @@ class AdditionTest {
     @Test
     void testAddNegativeValues() {
         assertEquals(-2, addition.add(1, -3));
+    }   @Test
+
+    @org.junit.Test
+    void coverApp() {
+        App.main(new String[]{});
     }
 }
