@@ -36,4 +36,10 @@ public class ComplexTest
         assertEquals(-1.0, calc2.real);
         assertEquals(-4.0, calc2.imag);
     }
+
+    @Test
+    void testNegate1() {
+        Complex calc1 = new Complex(1.0, 4.0);
+        double t = calc1.abs();
+    }
 }
