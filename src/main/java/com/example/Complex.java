@@ -45,7 +45,7 @@ public class Complex {
         Math.pow(ns, c / 2)
             / dDenom
             * (Math.cos(dArg) * Math.cos(cArg) * Math.log(ns)
-                - Math.sin(dArg) * Math.sin(cArg) * Math.log(ns));
+                - Math.sin(dArg) * Math.sin(cArg) / Math.log(ns));
     double newImag =
         Math.pow(ns, c / 2)
             / dDenom
