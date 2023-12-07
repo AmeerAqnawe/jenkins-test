@@ -1,7 +1,7 @@
 package com.example;
 
 public class Complex {
-  public double real, imag;
+  final public double real, imag;
 
   /**
    * Constructor that defines the <code>real</code> and <code>imaginary</code> parts of the number.
