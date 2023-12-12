@@ -12,7 +12,6 @@ import java.math.BigInteger;
 public class Rational extends Number implements Comparable<Rational> {
   private static final long serialVersionUID = 1657347377738275521L;
 
-  //test
   // -- Just some shortcuts for BigIntegers --
   private static final BigInteger B_ZERO = BigInteger.ZERO;
   private static final BigInteger B_ONE = BigInteger.ONE;
